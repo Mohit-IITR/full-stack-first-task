@@ -1,1 +1,0 @@
-# full-stack-first-task
