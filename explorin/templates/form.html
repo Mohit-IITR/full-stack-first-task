@@ -1,0 +1,29 @@
+
+<head>
+    <link rel="stylesheet" href="/static/css/form.css">
+    <title>form</title>
+</head>
+<body style="background-color: rgb(255, 255, 233);">
+    <img src="/static/logo.png" alt="logo">
+    <form id="form1" action="" method="post" >
+        
+        {% csrf_token %}
+        <div class="mohit">
+            Name {{data.name}}
+            <br><br>
+            Email {{data.email}}
+            <br><br>
+            Phone Number {{data.pno}}
+            <br><br>
+            College {{data.clg}}
+            <br><br>
+            Year {{data.year}}
+            <br><br>
+            Branch {{data.branch}}
+        </div>
+        <br>    
+        <input type="submit"  id="submit">
+
+    </form>
+    <a href='/table'> <button type="button" id="back">back</button> </a>
+</body>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/table.css">
+    <title>table</title>
+</head>
+<body style="background-color: rgb(255, 255, 233);">
+    <img src="/static/logo.png" alt="logo">
+    <table id="table1">
+        </tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone number</th>
+        <tr>
+            <br>
+            {% for i in data%}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.pno}}</td>
+        </tr>
+        {% endfor%}
+        <br>   
+    </table>
+    <a href="/form"><button> Add your details </button></a>
+    
+</body>
+</html>
