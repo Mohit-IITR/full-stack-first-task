@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>\
+    <link rel="stylesheet" href="\static\css\form.css">
+    <title>form</title>
+</head>
+<body style="background-color: rgb(255, 249, 244);">
+    
+    <img src="\static\images\logo.png" alt="logo" id="logo">
+    
+    <form id="main-form" action="" method = "POST">
+        {% csrf_token %}
+
+        <div class="attributes"> Name {{formdata.name}} </div> 
+        <div class="attributes"> Email {{formdata.email}} </div>
+        <div class="attributes"> pnumber {{formdata.pnumber}} </div>
+        <div class="attributes"> College {{formdata.college}} </div>
+        <div class="attributes"> Branch {{formdata.branch}} </div>
+        <div class="attributes"> Year {{formdata.year}} </div>
+
+        <br>
+        <button type="submit"  id="submit-button">Insert</button>
+        <br>
+        <a href="/table"> <button type="button" id="back-button">back</button> </a>
+    </form>
+</body>
+</html>

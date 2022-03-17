@@ -1,0 +1,38 @@
+#logo{
+    background-color: black;
+    margin-left: 557px;
+    margin-top: 30px;
+}
+#table1{
+    background-color: wheat;
+    font-family: cursive;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+td{
+    border: 2px solid black;
+    height: 30px;
+    vertical-align: bottom;
+}
+th{
+    background-color: orange;
+    font-size: large;
+    border: 2px solid black;
+    height: 30px;
+    vertical-align: bottom;
+}
+tr:nth-child(even) {background-color: white;}
+
+button{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 40px;
+    margin-left: 557px;
+}
